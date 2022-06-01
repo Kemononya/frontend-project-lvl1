@@ -1,0 +1,13 @@
+  name: eslint-test
+
+  on: [push]
+
+  jobs:
+    build:
+
+      runs-on: ubuntu-latest
+
+      steps:
+      - uses: actions/checkout@v3
+      - name: use eslint
+        run: make lint
