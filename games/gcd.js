@@ -2,18 +2,22 @@ import * as index from '../src/index.js';
 
 const task = () => console.log('Find the greatest common divisor of given numbers.');
 
-const gcd = (num1, num2) => {
+const gd = (num) => {
   const divisors1 = [];
-  const commonDivisors = [];
 
-  for (let i = 1; i <= num1; i += 1) {
-    if (num1 % i === 0) {
+  for (let i = 1; i <= num; i += 1) {
+    if (num % i === 0) {
       divisors1.push(i);
     }
   }
+  return divisors1;
+};
+
+const gcd = (num1, num2) => {
+  const commonDivisors = [];
 
   for (let i = 1; i <= num2; i += 1) {
-    if (num2 % i === 0 && divisors1.includes(i)) {
+    if (num2 % i === 0 && gd(num1).includes(i)) {
       commonDivisors.push(i);
     }
   }
