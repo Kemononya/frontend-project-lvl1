@@ -1,5 +1,7 @@
 import * as index from '../src/index.js';
 
+const task = () => console.log('Find the greatest common divisor of given numbers.');
+
 const gcd = (num1, num2) => {
   const divisors1 = [];
   const commonDivisors = [];
@@ -20,16 +22,16 @@ const gcd = (num1, num2) => {
 
 export default () => {
   index.greetings();
-  console.log('Find the greatest common divisor of given numbers.');
+  task();
 
   for (let i = 1; i <= 3; i += 1) {
     const randomNumber1 = Math.floor(Math.random() * 100 + 1);
     const randomNumber2 = Math.floor(Math.random() * 100 + 1);
-    const correctAnswer = gcd(randomNumber1, randomNumber2).toString();
+    const correctAnswer = gcd(randomNumber1, randomNumber2);
 
     index.interactive(`${randomNumber1} ${randomNumber2}`);
 
-    if (!index.result(correctAnswer)) {
+    if (!index.result(correctAnswer.toString())) {
       return;
     }
   }

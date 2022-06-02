@@ -1,8 +1,10 @@
 import * as index from '../src/index.js';
 
+const task = () => console.log('Answer "yes" if the number is even, otherwise answer "no".');
+
 export default () => {
   index.greetings();
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+  task();
 
   for (let i = 1; i <= 3; i += 1) {
     const randomNumber = Math.floor(Math.random() * 100 + 1);
