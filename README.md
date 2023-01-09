@@ -8,3 +8,12 @@ asciinema: [brain-even](https://asciinema.org/a/498633)
 [brain-gcd](https://asciinema.org/a/4gvxH7iVE3JG8MxxGDyd8PVzZ)
 [brain-progression](https://asciinema.org/a/iIMV1cynVTJEf7zQv50QW2UHS)
 [brain-prime](https://asciinema.org/a/rCU4rki77RvZdfIW69kBvFZoR)
+
+
+**Make install**
+
+Установка зависимостей
+
+**brain-even brain-calc brain-gcd brain-progression brain-prime**
+
+Команды для запуска 5 мини-игр, каждая команда - конкретная игра.
